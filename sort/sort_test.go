@@ -1,9 +1,9 @@
 package sort
 
 import (
+	"arithmetic/rand"
 	"github.com/stretchr/testify/assert"
 	"testing"
-	"yys.com/v0/rand"
 )
 
 func BenchmarkQuickSort(t *testing.B) {

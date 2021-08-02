@@ -1,4 +1,4 @@
-module yys.com/v0
+module arithmetic
 
 go 1.16
 
