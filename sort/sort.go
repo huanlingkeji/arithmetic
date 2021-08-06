@@ -1,5 +1,7 @@
 package sort
 
+import "arithmetic/util"
+
 /*
 快排:选定一个基准值(对数组以此基准进行排序，将比它小的放一边，比它大的放另一边).对左右两边递归进行此步骤。
 */
@@ -21,7 +23,7 @@ func doQuickSort(arr []int, i, j int) int {
 		for arr[l] <= temp && l < r {
 			l++
 		}
-		// TODO 注意：为什么需要先找比基准小的值？
+		// 注意：先找比基准打的值会造成，当没有交换时 l的位置不正确
 		swap(arr, l, r)
 	}
 	swap(arr, i, l)
@@ -29,6 +31,7 @@ func doQuickSort(arr []int, i, j int) int {
 }
 
 func QuickSort(arr []int, i, j int) {
+	util.PrintArr(arr)
 	if i < j {
 		ind := doQuickSort(arr, i, j)
 		QuickSort(arr, i, ind-1)
