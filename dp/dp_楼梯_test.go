@@ -11,7 +11,6 @@ func Test_climbStairs(t *testing.T) {
 		args args
 		want int
 	}{
-		// TODO: Add test cases.
 		{
 			name: "test1",
 			args: args{
@@ -38,7 +37,6 @@ func Test_minCostClimbingStairs(t *testing.T) {
 		args args
 		want int
 	}{
-		// TODO: Add test cases.
 		{
 			name: "test1",
 			args: args{
